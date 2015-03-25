@@ -4,5 +4,5 @@ install:
  - gem install fpm
  - source ./scripts/golang.sh
 script:
- - ./scripts/build.sh
- - ./scripts/package.sh
+ - scripts/build.sh
+ - scripts/package.sh

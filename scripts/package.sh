@@ -1,23 +1,20 @@
 #!/bin/bash
 
-vendor='jonathanporta.com'
-pkg_name='fpm-test'
+source ./scripts/config.sh
 
+BUILD_DIR="$(pwd)/build/linux"
+OUTPUT_DIR="$(pwd)/pkg/linux"
+INSTALL_DIR="/opt/$VENDOR/$PKG_NAME/"
 
-
-install_dir="/opt/$publisher/$pkg_name/"
+PKG_NAME="$APP-linux"
 version='0.0.1'
 
-src_dir="$(pwd)/src"
-pkg_dir="$(pwd)/pkg"
-
-
-mkdir -p $pkg_dir
+mkdir -p $OUTPUT_DIR
 
 fpm -s dir \
   -t rpm \
-  -n $pkg_name \
-  -p $pkg_dir \
+  -n $PKG_NAME \
+  -p $OUTPUT_DIR \
   -v $version \
-  --vendor $vendor \
-  $src_dir=$install_dir
+  --vendor $VENDOR \
+  $BUILD_DIR=$INSTALL_DIR

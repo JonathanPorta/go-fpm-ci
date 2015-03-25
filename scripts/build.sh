@@ -5,17 +5,7 @@
 source ./scripts/golang.sh
 
 # Actually build our app
-APP='hello'
-
-declare -A TARGETS
-TARGETS[windows]='386'
-TARGETS[linux]='amd64'
-TARGETS[darwin]='amd64'
-
-declare -A EXECUTABLES
-EXECUTABLES[windows]="$APP.exe"
-EXECUTABLES[linux]=$APP
-EXECUTABLES[darwin]=$APP
+source ./scripts/config.sh
 
 for TARGET in "${!TARGETS[@]}"
 do

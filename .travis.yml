@@ -1,5 +1,5 @@
 language: go
 go: '1.5'
 script:
- -./scripts/build.sh
- -./scripts/package.sh
+ - ./scripts/build.sh
+ - ./scripts/package.sh

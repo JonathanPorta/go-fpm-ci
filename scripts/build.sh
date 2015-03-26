@@ -9,6 +9,7 @@ echo "LS:"
 ls -la
 # Actually build our app
 source ./scripts/config.sh
+export GOPATH=$HOME/go:
 
 for TARGET in "${!TARGETS[@]}"
 do

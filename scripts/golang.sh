@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 START_DIR=$(pwd)
 echo "Starting in $START_DIR..."
 

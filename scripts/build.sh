@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # We have to build go 1.5 if we want to cross compile
 # Kind of messy, but will be a lot better when 1.5 is released!

@@ -7,7 +7,7 @@ export APP='hello'
 export VENDOR='jonathanporta.com'
 
 declare -A TARGETS
-TARGETS[windows]='386'
+TARGETS[windows]='amd64'
 TARGETS[linux]='amd64'
 TARGETS[darwin]='amd64'
 

@@ -3,7 +3,7 @@
 # We have to build go 1.5 if we want to cross compile
 # Kind of messy, but will be a lot better when 1.5 is released!
 # source $(pwd)/scripts/golang.sh
-
+echo 'Going to import the config.sh values...'
 # Actually build our app
 source ./scripts/config.sh
 

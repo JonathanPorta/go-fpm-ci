@@ -10,6 +10,7 @@ ls -la
 # Actually build our app
 source ./scripts/config.sh
 export GOPATH=$HOME/go
+export PATH=$GOPATH:$PATH
 
 for TARGET in "${!TARGETS[@]}"
 do

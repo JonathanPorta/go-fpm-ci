@@ -11,3 +11,4 @@ addons:
   apt_packages:
   - gcc
   - libc6-dev
+  - libc6-dev-i386

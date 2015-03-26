@@ -2,7 +2,7 @@ language: go
 go:
  - tip
 before_install:
- - sudo apt-get rpm
+ - sudo apt-get install rpm
 install:
  - gem install fpm
 script:

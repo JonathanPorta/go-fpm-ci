@@ -1,8 +1,11 @@
 language: go
 go:
-  - tip
+ - tip
 install:
  - gem install fpm
+addons:
+  apt_packages:
+   - rpm-build
 script:
  - ./scripts/build.sh
  - ./scripts/package.sh

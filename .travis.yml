@@ -5,7 +5,7 @@ install:
  - gem install fpm
 addons:
   apt_packages:
-   - rpm-build
+   - rpm
 script:
  - ./scripts/build.sh
- - ./scripts/package.sh
+ - ./scripts/package.sh # put in before deploy

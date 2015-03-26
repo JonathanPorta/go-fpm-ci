@@ -1,7 +1,4 @@
 #!/bin/bash
-echo '---------------------------'
-echo 'config.sh'
-echo '---------------------------'
 
 export APP='hello'
 export VENDOR='jonathanporta.com'

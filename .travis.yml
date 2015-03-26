@@ -7,11 +7,6 @@ install:
 script:
  - ./scripts/build.sh
  - ./scripts/package.sh
-addons:
-  apt_packages:
-  - gcc
-  - libc6-dev
-  - libc6-dev-i386
 env:
 - GIMME_OS=linux GIMME_ARCH=amd64
 - GIMME_OS=darwin GIMME_ARCH=amd64

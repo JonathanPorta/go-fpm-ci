@@ -1,8 +1,13 @@
 language: go
 # go: '1.5'
 install:
+ # - apt-get install gcc libc6-dev
  - gem install fpm
  - source ./scripts/golang.sh
 script:
  - ./scripts/build.sh
  - ./scripts/package.sh
+addons:
+  apt_packages:
+  - gcc
+  - libc6-dev

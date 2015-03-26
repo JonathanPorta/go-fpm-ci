@@ -12,6 +12,8 @@ source ./scripts/config.sh
 export GOPATH=$HOME/go
 export PATH=$GOPATH:$PATH
 
+go env
+
 for TARGET in "${!TARGETS[@]}"
 do
   echo -e "\n\nBuilding for $TARGET..."

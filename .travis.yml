@@ -15,6 +15,8 @@ deploy:
   files:
   - "./pkg/linux/hello-linux-0.0.1-1.x86_64.rpm"
   skip_cleanup: true
+  on:
+    branch: master
 addons:
   apt_packages:
   - rpm

@@ -14,8 +14,6 @@ deploy:
     secure: eHqmXmT9ziWulQzQB05fZu1W8O6Ox31TTc0kgdAuUIgT03jKFk7/SMmwgN8gLlnPUo0vdkwXI/ZUWQSv7x/euNejLLOBl2ZnJ3siG2kfkQikvGZvUWhqKhLmbWq01dak+nXW4FApJctDH7lIZytCY/lY2YqxRKEI+Rn1f/ec9v0=
   files:
   - "./pkg/linux/hello-linux-0.0.1-1.x86_64.rpm"
-  on:
-    tags: true
   skip_cleanup: true
 addons:
   apt_packages:

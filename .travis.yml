@@ -17,3 +17,6 @@ deploy:
   - "./pkg/linux/hello-linux-0.0.1-1.x86_64.rpm"
   on:
     repo: JonathanPorta/go-fpm-ci
+  skip_cleanup: true
+  on:
+    tags: true

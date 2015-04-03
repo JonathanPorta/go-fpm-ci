@@ -1,10 +1,11 @@
 language: go
 go:
  - tip
-before_install:
- - sudo apt-get install rpm
 install:
  - gem install fpm
 script:
  - ./scripts/build.sh
  - ./scripts/package.sh # put in before deploy
+addons:
+  apt_packages:
+  - rpm

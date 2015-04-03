@@ -1,3 +1,4 @@
 /build
 /golang
 /pkg
+.env

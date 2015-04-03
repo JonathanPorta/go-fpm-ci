@@ -5,10 +5,9 @@ install:
 - gem install fpm
 script:
 - "./scripts/build.sh"
+before_deploy:
 - "./scripts/package.sh"
-addons:
-  apt_packages:
-  - rpm
+- "./scripts/release.sh"
 deploy:
   provider: releases
   api_key:
@@ -16,7 +15,11 @@ deploy:
   files:
   - "./pkg/linux/hello-linux-0.0.1-1.x86_64.rpm"
   on:
-    repo: JonathanPorta/go-fpm-ci
-  skip_cleanup: true
-  on:
     tags: true
+  skip_cleanup: true
+addons:
+  apt_packages:
+  - rpm
+env:
+  global:
+    secure: Yrn5VJXIZkzRpvwb20IyC7OAQyyQaG+80L8O9VC7zeXrf8McCXadEyPMXQ3dzuaz8T1Ns6xkrZryPs1Yhp02g5Bz9vIUqbL3GsdyFKI6BixWLbpIz6o1GET2XkvPfp175PrOilKD8vw+4ge8figp3juW99mdzX+FCIe9Zmb9nQo=
